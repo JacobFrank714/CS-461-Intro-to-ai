@@ -1,0 +1,12 @@
+Best Found Schedule:
+CS101A, 11, Haag, 301, seats taken: (50/75), Hare
+CS101B, 15, Haag, 201, seats taken: (50/60), Hare
+CS191A, 14, FH, 310, seats taken: (50/108), Zein el Din
+CS191B, 10, Royall, 201, seats taken: (50/50), Gladbach
+CS201, 13, MNLC, 325, seats taken: (50/450), Nait-Abdesselam
+CS291, 14, Haag, 201, seats taken: (50/60), Xu
+CS303, 10, Haag, 201, seats taken: (60/60), Gladbach
+CS304, 11, Bloch, 119, seats taken: (25/60), Xu
+CS394, 10, Katz, 003, seats taken: (20/45), Xu
+CS449, 12, Haag, 301, seats taken: (60/75), Xu
+CS451, 13, FH, 310, seats taken: (100/108), Zein el Din

@@ -1,6 +1,8 @@
+import numpy as np
 
 def fitness(solution) -> float:
     score = 0.0
+
     for s in solution:
         courseScore = 0.0
         profClassCount = 1
@@ -19,6 +21,8 @@ def fitness(solution) -> float:
         else:
             courseScore -= 0.1
         for x in solution:
+            if s.name == x.name:
+                continue
             if s.time == x.time:
                 if s.room == x.room:
                     courseScore -= 0.5
@@ -61,12 +65,12 @@ def fitness(solution) -> float:
                         courseScore -= 0.25
         if profClassCount > 4:
             courseScore -= 0.5
-        # elif profClassCount == 1 or profClassCount == 2:
-        #     if s.professor == 'Xu':
-        #         pass
-        #     else:
-        #         courseScore -= 0.4
+        elif profClassCount == 1 or profClassCount == 2:
+            if s.professor == 'Xu':
+                pass
+            else:
+                courseScore -= 0.4
         s.fitness = courseScore
-        score += courseScore
-        
-    return score
+        score += s.fitness
+    
+    return np.exp(score)
